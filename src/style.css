@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 250px 250px;
+  column-gap: 1rem;
+}
+
+#focusTrap {
+  background-color: salmon;
+  padding: 1rem;
+}
+
+#fullContext {
+  background-color: #ddd;
+  padding: 1rem;
+}

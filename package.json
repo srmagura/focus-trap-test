@@ -1,0 +1,14 @@
+{
+  "name": "focus-trap-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9"
+  },
+  "packageManager": "yarn@3.6.0"
+}
