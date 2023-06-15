@@ -11,50 +11,6 @@ setInterval(() => {
 // CHALLENGE: Write code that allows the "FullContext ContentApp" input to
 // remain focused.
 
-focusTrapInput.addEventListener(
-  "focus",
-  (e) => {
-    console.log(
-      "[input focus capture] Preventing default and stopping immediate propagation..."
-    );
-    e.preventDefault();
-    e.stopImmediatePropagation();
-  },
-  { capture: true }
-);
-
-focusTrapInput.addEventListener(
-  "focusin",
-  (e) => {
-    console.log(
-      "[input focusin capture] Preventing default and stopping immediate propagation..."
-    );
-    e.preventDefault();
-    e.stopImmediatePropagation();
-  },
-  { capture: true }
-);
-
-window.addEventListener(
-  "focus",
-  (e) => {
-    console.log(
-      "[window focus capture] Preventing default and stopping immediate propagation..."
-    );
-    e.preventDefault();
-    e.stopImmediatePropagation();
-  },
-  { capture: true }
-);
-
-window.addEventListener(
-  "focusin",
-  (e) => {
-    console.log(
-      "[window focusin capture] Preventing default and stopping immediate propagation..."
-    );
-    e.preventDefault();
-    e.stopImmediatePropagation();
-  },
-  { capture: true }
-);
+HTMLElement.prototype.focus = () => {
+  console.log("focus caught");
+};
